@@ -24,7 +24,6 @@ namespace Basics {
       Assert.AreEqual(0, 100 % 5);
     }
 
-
     [Test]
     public void Divisibility2() {
       Assert.False(IsDivisibleBy3And5(10));

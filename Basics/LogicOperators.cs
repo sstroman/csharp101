@@ -19,7 +19,7 @@ namespace Basics {
     }
 
     private string FizzBuzz(int number) {
-      bool divisibleBy3 = (number % 3) == 0;
+      bool divisibleBy3 = DivisibleBy3(number);
       bool divisibleBy5 = (number % 5) == 0;
       string result = "";
 
@@ -31,6 +31,10 @@ namespace Basics {
       }
 
       return result;
+    }
+
+    private static bool DivisibleBy3(int number) {
+      return (number % 3) == 0;
     }
   }
 }
